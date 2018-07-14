@@ -1,16 +1,18 @@
-export class HomeService {
-    private http:ng.IHttpService;
-    private log:ng.ILogService;
+import { IHttpService, ILogService } from 'angular';
 
-    constructor($http, $log){
-        "ngInject";
+export class HomeService {
+    private http: ng.IHttpService;
+    private log: ng.ILogService;
+
+    constructor($http: IHttpService, $log: ILogService) {
+        'ngInject';
         this.http = $http;
         this.log = $log;
     }
 
     public getData() : any {
         return {
-            message: "Hello World !"
-        }
+            message: 'Hello World !'
+        };
     }
 }

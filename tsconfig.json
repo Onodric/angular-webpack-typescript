@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
+    "module": "es6",
     "sourceMap": true,
     "experimentalDecorators": true,
     "baseUrl": "./node_modules"

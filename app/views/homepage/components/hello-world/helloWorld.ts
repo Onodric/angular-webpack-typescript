@@ -10,7 +10,7 @@ export const HelloWorldComponent: ng.IComponentOptions = {
     controller: function() {
         let ctrl = this;
         ctrl.$onInit = () => {
-            ctrl.message2 = ", I'm a component.";
+            ctrl.message2 = ", I am a component, found in helloWorld.ts!";
         };
     },
     controllerAs: 'HelloWorld',
