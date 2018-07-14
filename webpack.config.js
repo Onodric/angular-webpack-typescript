@@ -8,6 +8,7 @@ const extractCSS = new ExtractTextPlugin({
 
 module.exports = env => {
   return {
+    mode: "development",
     context: __dirname,
     entry: './index.ts',
     output: {
